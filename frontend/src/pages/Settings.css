@@ -1,0 +1,27 @@
+.settings {
+  padding: 1.5rem;
+}
+
+.settings-form {
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.settings-form__submit,
+.settings-form__delete {
+  width: 100%;
+}
+

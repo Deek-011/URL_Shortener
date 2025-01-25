@@ -1,0 +1,43 @@
+.dashboard {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.card__header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card__value {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.card__content {
+  padding: 1.5rem;
+}
+
+.chart {
+  height: 300px;
+  width: 100%;
+}
+
+.chart--horizontal {
+  height: 200px;
+}
+

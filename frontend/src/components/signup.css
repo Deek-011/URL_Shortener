@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background: url("../assets/m-image.png") no-repeat center center/cover;
+
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.form-card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button.primary {
+  background-color: #0056d2;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.toggle-link {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  color: #0056d2;
+}
