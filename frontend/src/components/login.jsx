@@ -15,7 +15,7 @@ const Login = ({ toggleForm }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/auth/login", {
+      const response = await axios.post("https://url-shortener-api-nine.vercel.app/auth/login", {
         email,
         password,
       });
