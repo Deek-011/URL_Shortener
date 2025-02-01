@@ -27,7 +27,7 @@ const Signup = ({ toggleForm }) => {
 
     try {
       // Send the data to the backend using POST request
-      const response = await axios.post("http://localhost:8080/auth/signup", {
+      const response = await axios.post("https://url-shortener-api-nine.vercel.app/auth/signup", {
         name,
         email,
         mobilenumber,
