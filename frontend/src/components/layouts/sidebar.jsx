@@ -1,7 +1,7 @@
-import "./Sidebar.css"
-import { Link } from "react-router-dom"
+import "./sidebar.css";
+import { Link } from "react-router-dom";
 
-export function Sidebar() {
+export default function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar__logo">
@@ -38,6 +38,5 @@ export function Sidebar() {
         </ul>
       </nav>
     </aside>
-  )
+  );
 }
-

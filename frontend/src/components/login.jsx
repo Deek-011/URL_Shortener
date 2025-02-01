@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import "./login.css";
 
-import logoImage from "../assets/download-2.png";  
-import backgroundImage from "../assets/m-image.png";  
+import logoImage from "../assets/download-2.png";
+import backgroundImage from "../assets/m-image.png";
 
 const Login = ({ toggleForm }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,13 +22,17 @@ const Login = ({ toggleForm }) => {
       // Store token and user info in local storage or state
       localStorage.setItem("token", response.data.jwtToken);
       alert("Login successful!");
+      navigate("/dashboard");
     } catch (error) {
       setError(error.response?.data?.message || "Something went wrong.");
     }
   };
 
   return (
-    <div className="container" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div
+      className="container"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
       <div className="image-section">
         <img src={logoImage} alt="Logo" className="logo" />
       </div>
